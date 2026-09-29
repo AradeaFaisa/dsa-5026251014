@@ -1,4 +1,3 @@
-package lw01.prelab;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +13,7 @@ public class Main{
             String id = scanner.next();
             int pages = scanner.nextInt();
 
-            PrintJob job;
+            PrintJob job = null;
 
             if(type.equals("MONO")){
                 jobs.add(new MonoPrint(id, pages));
