@@ -20,16 +20,16 @@ public class Main {
         }
         scan.close();
 
-        for(int i=0; i<2; i++) {
+        for(int i=0; i<2; i++){
             int key = parcels[i];
             int j = i-1;
-
-            while(j>=0 && parcels[j]<key) {
-                parcels[j+1] = parcels[j];
+            
+            while (j>=0 && parcels[j]<key){
+                parcels[j+1] = parcels [j];
                 j--;
             }
 
-            parcels[j+1] = key;
+            parcels [j+1]=key;
         }
 
         int[] SetelahDuaPasses = new int[n];
